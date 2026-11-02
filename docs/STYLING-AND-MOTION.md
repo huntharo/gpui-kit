@@ -212,7 +212,8 @@ The transition owns lifecycle mechanics only:
 - animation-frame requests;
 - smooth reversal from the currently sampled value;
 - reduced-motion handling, against the operating system's preference that
-  `gpui_base::init` reads into `App::set_reduce_motion` (see `reduce_motion`).
+  `gpui_base::init` reads into `App::set_reduce_motion` and keeps following
+  (see `reduce_motion`).
 
 The caller chooses what the value means and applies it to opacity, color,
 geometry, or another interpolatable property.
